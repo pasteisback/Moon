@@ -1,0 +1,104 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Main container */
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    background: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2c2c2c;
+    padding: 15px 20px;
+    border-bottom: 1px solid #444;
+}
+
+header h1 {
+    font-size: 20px;
+    color: #49c8ff;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.status .dot {
+    width: 10px;
+    height: 10px;
+    background: #49ff85;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 300px;
+    background: #2e2e2e;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    font-size: 14px;
+    resize: none;
+    outline: none;
+}
+
+textarea::placeholder {
+    color: #888;
+}
+
+/* Button styling */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background: #49c8ff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #1ea3d8;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button#clearBtn {
+    background: #ff4949;
+}
+
+button#clearBtn:hover {
+    background: #d83c3c;
+}
