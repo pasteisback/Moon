@@ -7,6 +7,11 @@
 }
 
 /* Main container */
+body {
+    background: #000; /* Black background */
+    color: #fff;
+}
+
 .container {
     width: 80%;
     max-width: 800px;
@@ -14,7 +19,6 @@
     background: #1e1e1e;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    color: #fff;
     overflow: hidden;
 }
 
@@ -42,9 +46,10 @@ header h1 {
 .status .dot {
     width: 10px;
     height: 10px;
-    background: #49ff85;
+    background: red; /* Red for "Not Connected" */
     border-radius: 50%;
     margin-right: 5px;
+    transition: background 0.3s;
 }
 
 /* Main content styling */
